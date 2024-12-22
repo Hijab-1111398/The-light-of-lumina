@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storyline - The Light of Lumina</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            background-color: #001f3f;
+            overflow-x: hidden;
+        }
+
+        .storyline-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            min-height: 100vh;
+            background-image: url('lumina.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .main-header {
+            text-align: center;
+            margin-bottom: 30px;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .title {
+            font-size: 3rem;
+            color: #00e6e6;
+            text-shadow: 0 0 10px #00e6e6;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: #aaf;
+        }
+
+        .character-profiles {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .profile-card {
+            width: 250px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .profile-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .profile-name {
+            font-size: 1.5rem;
+            color: #00e6e6;
+        }
+
+        .profile-description {
+            font-size: 1rem;
+            line-height: 1.4;
+        }
+
+        .story-chapters {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .chapter {
+            margin-bottom: 30px;
+        }
+
+        .chapter-title {
+            font-size: 1.8rem;
+            color: #ffcc00;
+            text-shadow: 0 0 10px #ffcc00;
+        }
+
+        .chapter-content {
+            margin: 15px 0;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .chapter-image {
+            margin: 15px 0;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .subtitles {
+            font-size: 1rem;
+            line-height: 1.4;
+            color: #ddd;
+            margin-top: 10px;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #ccc;
+            background: rgba(0, 31, 63, 0.8);
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="storyline-container">
+        <header class="main-header">
+            <h1 class="title">The Light of Lumina</h1>
+            <p class="subtitle">Dive into the magical journey with Callie and Zephyr.</p>
+        </header>
+
+        <section class="character-profiles">
+            <div class="profile-card">
+                <img src="callie.png" alt="Callie Marlowe">
+                <h3 class="profile-name">Callie Marlowe</h3>
+                <p class="profile-description">An adventurous young explorer driven by her dream to bring hope and healing through the magical light of Lumina.</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="zephyr.png" alt="Zephyr">
+                <h3 class="profile-name">Zephyr</h3>
+                <p class="profile-description">A playful, wise sea-dragon who guides Callie with riddles, encouragement, and a touch of mischief.</p>
+            </div>
+        </section>
+
+        <section class="story-chapters">
+            <div class="chapter">
+                <h2 class="chapter-title">Chapter 1: The Call to Adventure</h2>
+                <img class="chapter-image" src="chapter1-image.jpg" alt="Callie embarking on her journey">
+                <p class="chapter-content">Callie Marlowe, driven by her dream of finding the healing light of Lumina, ventures into the deep ocean. Guided by Zephyr, her playful sea-dragon mentor, her journey begins.</p>
+                <div class="subtitles">"The sea holds secrets," Zephyr teased. "Let’s find them together."</div>
+                <div class="audio-controls">
+                    <audio controls>
+                        <source src="chapter1.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="chapter">
+                <h2 class="chapter-title">Chapter 2: The Glowing Ruins</h2>
+                <img class="chapter-image" src="chapter2-image.jpg" alt="The glowing ruins of Lumina">
+                <p class="chapter-content">Navigating glowing ruins and mysterious sea creatures, Callie discovers hints of Lumina's light while overcoming challenges of courage and wisdom.</p>
+                <div class="subtitles">"Courage is a light in itself," Zephyr reminded her as they explored the ruins.</div>
+                <div class="audio-controls">
+                    <audio controls>
+                        <source src="chapter2.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2024 The Light of Lumina | Discover the Adventure!</p>
+        </footer>
+    </div>
+</body>
+</html>
+

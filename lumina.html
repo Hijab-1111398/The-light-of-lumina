@@ -19,10 +19,17 @@
             align-items: center;
             text-align: center;
             min-height: 100vh;
+            background-image: url('lumina.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
 
         .main-header {
             margin-top: 50px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
         }
 
         .title {
@@ -39,19 +46,10 @@
         .content-section {
             position: relative;
             margin: 50px 0;
-        }
-
-        .background-image {
-            background-image: url('lumina.png');
-            background-size: cover;
-            background-position: center;
-            filter: brightness(0.6);
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
         }
 
         .intro-text {
@@ -105,7 +103,6 @@
         </header>
 
         <main class="content-section">
-            <div class="background-image"></div>
             <div class="intro-text">
                 <p>Join Callie Marlowe on her quest to find the healing light of Lumina, guided by her playful mentor, Zephyr. Navigate glowing ruins, meet mystical creatures, and uncover secrets!</p>
             </div>
@@ -123,3 +120,4 @@
     </div>
 </body>
 </html>
+
