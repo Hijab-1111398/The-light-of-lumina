@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Light of Lumina</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            background-color: #001f3f;
+            overflow-x: hidden;
+        }
+
+        .homepage-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            min-height: 100vh;
+        }
+
+        .main-header {
+            margin-top: 50px;
+        }
+
+        .title {
+            font-size: 3rem;
+            color: #00e6e6;
+            text-shadow: 0 0 10px #00e6e6;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: #aaf;
+        }
+
+        .content-section {
+            position: relative;
+            margin: 50px 0;
+        }
+
+        .background-image {
+            background-image: url('lumina.png');
+            background-size: cover;
+            background-position: center;
+            filter: brightness(0.6);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .intro-text {
+            padding: 20px;
+            font-size: 1.2rem;
+        }
+
+        .navigation-buttons {
+            margin-top: 20px;
+        }
+
+        .navigation-buttons button {
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .navigation-buttons button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        .main-footer {
+            margin-top: auto;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #ccc;
+            background: rgba(0, 31, 63, 0.8);
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</head>
+<body>
+    <div class="homepage-container">
+        <header class="main-header">
+            <h1 class="title">The Light of Lumina</h1>
+            <p class="subtitle">Embark on a magical journey to uncover the secrets of the underwater city.</p>
+        </header>
+
+        <main class="content-section">
+            <div class="background-image"></div>
+            <div class="intro-text">
+                <p>Join Callie Marlowe on her quest to find the healing light of Lumina, guided by her playful mentor, Zephyr. Navigate glowing ruins, meet mystical creatures, and uncover secrets!</p>
+            </div>
+
+            <nav class="navigation-buttons">
+                <button onclick="navigateTo('storyline.html')">Discover the Story</button>
+                <button onclick="navigateTo('interactive.html')">Interactive Fun</button>
+                <button onclick="navigateTo('sdg.html')">Explore Health & Wellness</button>
+            </nav>
+        </main>
+
+        <footer class="main-footer">
+            <p>© 2024 The Light of Lumina | Dive into the Adventure!</p>
+        </footer>
+    </div>
+</body>
+</html>
