@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Fun - The Light of Lumina</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            background-color: #001f3f;
+            overflow-x: hidden;
+        }
+
+        .interactive-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            min-height: 100vh;
+            background-image: url('lumina.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .main-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        .title {
+            font-size: 2rem;
+            color: #00e6e6;
+            text-shadow: 0 0 10px #00e6e6;
+            margin: 0;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-button {
+            font-size: 1rem;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: #aaf;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .quiz-section, .game-section {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            width: 80%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .quiz-question {
+            font-size: 1.5rem;
+            color: #ffcc00;
+        }
+
+        .quiz-answer {
+            font-size: 1.2rem;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            padding: 15px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        .quiz-answer:hover {
+            background-color: #0056b3;
+        }
+
+        .game-choice {
+            font-size: 1.2rem;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 15px;
+            margin-top: 15px;
+            width: 100%;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .game-choice:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #ccc;
+            background: rgba(0, 31, 63, 0.8);
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="interactive-container">
+        <header class="main-header">
+            <h1 class="title">Interactive Fun</h1>
+            <div class="nav-buttons">
+                <a href="lumina.html" class="nav-button">The light of Lumina</a>
+                <a href="sdg.html" class="nav-button">Explore Health & Wellness</a>
+                <a href="storyline.html" class="nav-button">Discover the story</a>
+            </div>
+        </header>
+        <p class="subtitle">Explore your personality and make decisions in Callie's journey!</p>
+
+        <!-- Personality Quiz Section -->
+        <section class="quiz-section">
+            <h2 class="quiz-question">What’s your preferred way to solve problems?</h2>
+            <button class="quiz-answer" onclick="showCreatureResult('brave')">I face them head-on with courage!</button>
+            <button class="quiz-answer" onclick="showCreatureResult('wise')">I think things through and seek wisdom.</button>
+            <button class="quiz-answer" onclick="showCreatureResult('kind')">I help others and care for their well-being.</button>
+        </section>
+
+        <!-- Game Section -->
+        <section class="game-section">
+            <h2 class="quiz-question">Callie encounters a mysterious glowing creature. What should she do?</h2>
+            <button class="game-choice" onclick="makeChoice('approach')">Approach the creature carefully.</button>
+            <button class="game-choice" onclick="makeChoice('observe')">Stay back and observe from a distance.</button>
+        </section>
+
+        <footer>
+            <p>© 2024 The Light of Lumina | Dive into the Adventure!</p>
+        </footer>
+    </div>
+
+    <script>
+        function showCreatureResult(choice) {
+            let resultMessage = "";
+            if (choice === 'brave') {
+                resultMessage = "You are like the Radiant Seahorse—brave and adventurous!";
+            } else if (choice === 'wise') {
+                resultMessage = "You are like the Wise Jellyfish—thoughtful and calm!";
+            } else if (choice === 'kind') {
+                resultMessage = "You are like the Caring Starfish—compassionate and nurturing!";
+            }
+            alert(resultMessage);
+        }
+
+        function makeChoice(choice) {
+            let decisionMessage = "";
+            if (choice === 'approach') {
+                decisionMessage = "Callie cautiously approaches the creature, discovering it holds a piece of Lumina's magical light!";
+            } else if (choice === 'observe') {
+                decisionMessage = "Callie decides to watch the creature, learning a valuable lesson in patience and observation.";
+            }
+            alert(decisionMessage);
+        }
+    </script>
+</body>
+</html>

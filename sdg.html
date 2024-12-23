@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Health & Wellness - The Light of Lumina</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            background-color: #001f3f;
+            overflow-x: hidden;
+        }
+
+        .sdg3-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            min-height: 100vh;
+            background-image: url('lumina.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .main-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .title {
+            font-size: 2.5rem;
+            color: #00e6e6;
+            text-shadow: 0 0 10px #00e6e6;
+            margin: 0;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+
+        .health-meter-section {
+            margin-top: 20px;
+            width: 80%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .health-meter {
+            width: 100%;
+            background-color: #555;
+            height: 30px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .health-fill {
+            height: 100%;
+            background-color: #00e6e6;
+            border-radius: 5px;
+        }
+
+        .health-tip-section {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            width: 80%;
+            margin-top: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .health-tip-title {
+            font-size: 1.8rem;
+            color: #ffcc00;
+            text-shadow: 0 0 10px #ffcc00;
+        }
+
+        .health-tip-content {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .character-health-tip {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            gap: 15px;
+        }
+
+        .character-health-tip img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+        }
+
+        .download-section {
+            margin-top: 30px;
+            width: 80%;
+            text-align: center;
+        }
+
+        .download-button {
+            padding: 15px 30px;
+            font-size: 1rem;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #ccc;
+            background: rgba(0, 31, 63, 0.8);
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="sdg3-container">
+        <!-- Updated Header with Navigation Buttons -->
+        <header class="main-header">
+            <h1 class="title">Explore Health & Wellness</h1>
+            <div class="nav-buttons">
+                <button class="nav-button" onclick="navigateTo('lumina.html')">The light of Lumina</button>
+                <button class="nav-button" onclick="navigateTo('interactive.html')">Interactive Fun</button>
+                <button class="nav-button" onclick="navigateTo('storyline.html')">Discover the story</button>
+            </div>
+        </header>
+
+        <!-- Health Meter Section -->
+        <section class="health-meter-section">
+            <h2 class="health-tip-title">Your Health Meter</h2>
+            <div class="health-meter">
+                <div id="health-fill" class="health-fill" style="width: 40%;"></div>
+            </div>
+            <p class="health-tip-content">Fill up your health meter by completing fun tasks and tips to stay healthy!</p>
+        </section>
+
+        <!-- Health Tips Section -->
+        <section class="health-tip-section">
+            <h2 class="health-tip-title">Health Tips from Lumina</h2>
+            <p class="health-tip-content">Here are some tips from Callie and Zephyr to help you stay healthy and strong:</p>
+            <div class="character-health-tip">
+                <img src="callie.png" alt="Callie" />
+                <div>
+                    <h3>Callie's Tip: Eat Healthy Like Zephyr!</h3>
+                    <p>Zephyr loves fresh seaweed and fruits, which help him stay strong and playful. Eating a variety of foods can keep you feeling great too!</p>
+                </div>
+            </div>
+            <div class="character-health-tip">
+                <img src="zephyr.png" alt="Zephyr" />
+                <div>
+                    <h3>Zephyr's Tip: Stay Calm Like Callie!</h3>
+                    <p>When Callie gets stressed, she takes deep breaths and focuses on what makes her happy. Being calm and relaxed is an important part of staying healthy!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Section -->
+        <section class="download-section">
+            <h2 class="health-tip-title">Download Fun Health Activities</h2>
+            <button class="download-button" onclick="downloadContent()">Download Coloring Pages</button>
+        </section>
+
+        <footer>
+            <p>© 2024 The Light of Lumina | Discover Health & Wellness!</p>
+        </footer>
+    </div>
+
+    <script>
+        // Simulating the health meter filling up as the user engages in activities
+        let healthFill = document.getElementById('health-fill');
+        function increaseHealth(amount) {
+            let currentWidth = parseInt(healthFill.style.width);
+            if (currentWidth + amount <= 100) {
+                healthFill.style.width = (currentWidth + amount) + '%';
+            } else {
+                healthFill.style.width = '100%';
+            }
+        }
+
+        function downloadContent() {
+            alert('Your coloring pages have been downloaded!');
+            // This would be the actual file download functionality. For now, it's a placeholder.
+        }
+
+        function navigateTo(screen) {
+            window.location.href = screen;
+            // Replace with actual navigation logic for the other screens.
+        }
+    </script>
+</body>
+</html>
