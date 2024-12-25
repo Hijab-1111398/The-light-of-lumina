@@ -28,22 +28,49 @@
         }
 
         .main-header {
-            text-align: center;
-            margin-bottom: 30px;
-            background: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
             padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
             border-radius: 10px;
+            box-sizing: border-box;
         }
 
         .title {
-            font-size: 3rem;
+            font-size: 2rem;
             color: #00e6e6;
             text-shadow: 0 0 10px #00e6e6;
+            margin: 0;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-button {
+            font-size: 1rem;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background-color: #0056b3;
         }
 
         .subtitle {
             font-size: 1.5rem;
             color: #aaf;
+            text-align: center;
+            margin-top: 10px;
         }
 
         .character-profiles {
@@ -132,8 +159,13 @@
     <div class="storyline-container">
         <header class="main-header">
             <h1 class="title">The Light of Lumina</h1>
-            <p class="subtitle">Dive into the magical journey with Callie and Zephyr.</p>
+            <div class="nav-buttons">
+                <a href="lumina.html" class="nav-button">The light of Lumina</a>
+                <a href="sdg.html" class="nav-button">Exploring Health & Wellness</a>
+                <a href="interactive.html" class="nav-button">Interactive Fun</a>
+            </div>
         </header>
+        <p class="subtitle">Dive into the magical journey with Callie and Zephyr.</p>
 
         <section class="character-profiles">
             <div class="profile-card">
@@ -150,32 +182,114 @@
         </section>
 
         <section class="story-chapters">
-            <div class="chapter">
-                <h2 class="chapter-title">Chapter 1: The Call to Adventure</h2>
-                <img class="chapter-image" src="chapter1-image.jpg" alt="Callie embarking on her journey">
-                <p class="chapter-content">Callie Marlowe, driven by her dream of finding the healing light of Lumina, ventures into the deep ocean. Guided by Zephyr, her playful sea-dragon mentor, her journey begins.</p>
-                <div class="subtitles">"The sea holds secrets," Zephyr teased. "Let’s find them together."</div>
-                <div class="audio-controls">
-                    <audio controls>
-                        <source src="chapter1.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
-            </div>
+    <!-- Prologue -->
+    <div class="chapter">
+        <h2 class="chapter-title">Prologue: The Tale of Lumina</h2>
+        <img class="chapter-image" src="prologue-image.jpg" alt="Callie in her hospital bed">
+        <p class="chapter-content">
+            Callie Marlowe is a spirited young girl confined to a hospital bed due to a chronic illness. Despite her challenges, she escapes into the mythical story of Lumina,
+            a city holding a healing light, told nightly by her mother. One day, after a difficult treatment setback, Callie dreams of plunging into the ocean, determined
+            to find Lumina and its light—not just for herself, but for others like her.
+        </p>
+        <div class="audio-controls">
+            <audio controls>
+                <source src="audio/prologue.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
 
-            <div class="chapter">
-                <h2 class="chapter-title">Chapter 2: The Glowing Ruins</h2>
-                <img class="chapter-image" src="chapter2-image.jpg" alt="The glowing ruins of Lumina">
-                <p class="chapter-content">Navigating glowing ruins and mysterious sea creatures, Callie discovers hints of Lumina's light while overcoming challenges of courage and wisdom.</p>
-                <div class="subtitles">"Courage is a light in itself," Zephyr reminded her as they explored the ruins.</div>
-                <div class="audio-controls">
-                    <audio controls>
-                        <source src="chapter2.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
-            </div>
-        </section>
+    <!-- Chapter 1 -->
+    <div class="chapter">
+        <h2 class="chapter-title">Chapter 1: The Call to Adventure</h2>
+        <img class="chapter-image" src="chapter1-image.jpg" alt="Callie standing at the edge of the ocean">
+        <p class="chapter-content">
+            In her dreamlike state, Callie stands at the edge of a glowing ocean. Diving in, she transforms—breathing underwater and moving freely, feeling strong for
+            the first time in years. She meets Zephyr, a playful sea dragon, who challenges her to navigate a twisting coral maze, pushing her to overcome self-doubt
+            and embrace her inner strength.
+        </p>
+        <div class="subtitles">"Follow me, little swimmer. Let’s see what you’re made of!" Zephyr teased.</div>
+        <div class="audio-controls">
+            <audio controls>
+                <source src="audio/chapter1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+    <!-- Chapter 2 -->
+    <div class="chapter">
+        <h2 class="chapter-title">Chapter 2: The Glowing Ruins</h2>
+        <img class="chapter-image" src="chapter2-image.jpg" alt="Callie exploring the ruins of Lumina">
+        <p class="chapter-content">
+            Guided by Zephyr, Callie ventures into the glowing ruins of Lumina. She faces collapsing pathways, swirling currents, and eerie sea creatures guarding ancient
+            secrets. Amid the challenges, she discovers inscriptions that reveal Lumina’s light responds to resilience and hope. Callie begins to confront her frustration
+            about her illness and finds a newfound determination to continue.
+        </p>
+        <div class="subtitles">"Courage is a light in itself," Zephyr reminded her as they explored the ruins.</div>
+        <div class="audio-controls">
+            <audio controls>
+                <source src="audio/chapter2.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+    <!-- Chapter 3 -->
+    <div class="chapter">
+        <h2 class="chapter-title">Chapter 3: The Monster of the Abyss</h2>
+        <img class="chapter-image" src="chapter3-image.jpg" alt="The Guardian of Shadows facing Callie">
+        <p class="chapter-content">
+            At the entrance to Lumina’s core, Callie confronts the Guardian of Shadows, a leviathan that embodies despair and fear. It projects illusions of Callie’s
+            hospital room and moments of helplessness, testing her resolve. With Zephyr’s encouragement, Callie embraces her hope and shouts back at the Guardian,
+            breaking through the illusions and dissolving it into harmless shadows.
+        </p>
+        <div class="subtitles">"I may be small, but my hope is bigger than you’ll ever be!" Callie declared.</div>
+        <div class="audio-controls">
+            <audio controls>
+                <source src="audio/chapter3.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+    <!-- Chapter 4 -->
+    <div class="chapter">
+        <h2 class="chapter-title">Chapter 4: Lumina’s Heart</h2>
+        <img class="chapter-image" src="chapter4-image.jpg" alt="The radiant heart of Lumina">
+        <p class="chapter-content">
+            Reaching the heart of Lumina, Callie finds a radiant chamber pulsating with light. The light responds to her emotions, amplifying the strength and hope
+            within her. Zephyr reassures her that the light is for anyone brave enough to believe in it. Callie realizes that Lumina’s light isn’t a cure, but a source
+            of resilience. She feels connected to others like her, inspired to share this newfound hope.
+        </p>
+        <div class="subtitles">"The light isn’t just for the strong; it’s for those who believe," Zephyr said with a smile.</div>
+        <div class="audio-controls">
+            <audio controls>
+                <source src="audio/chapter4.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+    <!-- Epilogue -->
+    <div class="chapter">
+        <h2 class="chapter-title">Epilogue: Sharing the Light</h2>
+        <img class="chapter-image" src="epilogue-image.jpg" alt="Callie sharing her story with children">
+        <p class="chapter-content">
+            Callie awakens with a renewed sense of purpose. She shares her dream of Lumina with the children in the hospital, inspiring them to find hope in their own
+            battles. Though her illness remains, she becomes a source of light for others, supported by her mother, who vows to continue researching ways to bring
+            joy and healing to children in need.
+        </p>
+        <div class="subtitles">"The light we carry can brighten the darkest places," Callie told her friends.</div>
+        <div class="audio-controls">
+            <audio controls>
+                <source src="audio/epilogue.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+</section>
+
 
         <footer>
             <p>© 2024 The Light of Lumina | Discover the Adventure!</p>
@@ -183,4 +297,5 @@
     </div>
 </body>
 </html>
+
 
