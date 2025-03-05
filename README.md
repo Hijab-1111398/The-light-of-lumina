@@ -1,5 +1,5 @@
 # The-light-of-lumina
-interactive website for kids in the hospital. 
+interactive website for kids in the hospital using SDG 3 "good health adn well-being". 
 
 1. clone the repository to get the website started.
 2. Start with the html file called "lumina.html".
